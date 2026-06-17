@@ -16,3 +16,7 @@ class Solution:
             if slow is fast:
                 return True
         return False
+
+
+# Time Complexity: O(n)
+# Space Complexity: O(1)

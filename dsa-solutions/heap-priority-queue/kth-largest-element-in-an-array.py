@@ -10,5 +10,6 @@ class Solution:
                 heapq.heappop(h)
         return h[0]
 
+
 # Time Complexity: O(nlog(k))
 # Space Complexity: O(k)

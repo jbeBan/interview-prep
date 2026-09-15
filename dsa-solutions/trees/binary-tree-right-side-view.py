@@ -26,5 +26,6 @@ class Solution:
                     q.appendleft(n.right)
         return rs
 
+
 # Time Complexity: O(n)
 # Space Complexity: O(n)

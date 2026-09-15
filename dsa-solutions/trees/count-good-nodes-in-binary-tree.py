@@ -22,5 +22,6 @@ class Solution:
 
         return good_nodes(root, root.val)
 
+
 # Time Complexity: O(n)
 # Space Complexity: O(n)

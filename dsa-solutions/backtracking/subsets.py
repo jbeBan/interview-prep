@@ -4,7 +4,7 @@ from typing import List
 class Solution:
     def subsets(self, nums: List[int]) -> List[List[int]]:
         def helper(i, ints, c, s):
-            if i >= len(nums):
+            if i >= len(ints):
                 s.append(c.copy())
                 return
             c.append(ints[i])

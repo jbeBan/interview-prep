@@ -5,5 +5,6 @@ class Solution:
             m ^= i ^ nums[i]
         return m
 
+
 # Time Complexity: O(n)
 # Space Complexity: O(1)

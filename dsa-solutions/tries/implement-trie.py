@@ -20,6 +20,9 @@ class PrefixTree:
             n = n.nodes[c]
         n.is_word = True
 
+    # Time complexity: O(n)
+    # Space complexity: O(n)
+
     def search(self, word: str) -> bool:
         n = self.root
         for c in word:
@@ -28,6 +31,9 @@ class PrefixTree:
             n = n.nodes[c]
         return n.is_word
 
+    # Time complexity: O(n)
+    # Space complexity: O(1)
+
     def startsWith(self, prefix: str) -> bool:
         n = self.root
         for c in prefix:
@@ -35,3 +41,6 @@ class PrefixTree:
                 return False
             n = n.nodes[c]
         return True
+
+    # Time complexity: O(n)
+    # Space complexity: O(1)

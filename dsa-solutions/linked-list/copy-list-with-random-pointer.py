@@ -6,8 +6,8 @@ from typing import Optional
 @dataclass
 class Node:
     val: int
-    next: Node = None
-    random: Node = None
+    next: "Node" = None
+    random: "Node" = None
 
 
 class Solution:

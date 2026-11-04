@@ -5,12 +5,12 @@ from typing import Optional
 @dataclass
 class TreeNode:
     val: int = 0
-    left: TreeNode = None
-    right: TreeNode = None
+    left: "TreeNode" = None
+    right: "TreeNode" = None
 
 
 class Solution:
-    def isBalanced(self, root: Optional[TreeNode]) -> bool:
+    def isBalanced(self, root: Optional["TreeNode"]) -> bool:
         h = {None: 0}
         stack = [(root, False)] if root else []
         while stack:

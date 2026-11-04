@@ -5,15 +5,15 @@ from typing import Optional
 @dataclass
 class TreeNode:
     val: int = 0
-    left: TreeNode = None
-    right: TreeNode = None
+    left: "TreeNode" = None
+    right: "TreeNode" = None
 
 
 class Solution:
-    def diameterOfBinaryTree(self, root: Optional[TreeNode]) -> int:
+    def diameterOfBinaryTree(self, root: Optional["TreeNode"]) -> int:
         md = 0
 
-        def dbt(root: Optional[TreeNode]) -> int:
+        def dbt(root: Optional["TreeNode"]) -> int:
             nonlocal md
             if not root:
                 return 0

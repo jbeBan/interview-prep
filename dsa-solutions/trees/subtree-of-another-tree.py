@@ -5,12 +5,12 @@ from typing import Optional
 @dataclass
 class TreeNode:
     val: int = 0
-    left: TreeNode = None
-    right: TreeNode = None
+    left: "TreeNode" = None
+    right: "TreeNode" = None
 
 
 class Solution:
-    def isSubtree(self, root: Optional[TreeNode], subRoot: Optional[TreeNode]) -> bool:
+    def isSubtree(self, root: Optional["TreeNode"], subRoot: Optional["TreeNode"]) -> bool:
         if not subRoot:
             return True
         if not root:
@@ -26,7 +26,7 @@ class Solution:
                 stack.append(node.left)
         return False
 
-    def subtree(self, root: Optional[TreeNode], subRoot: Optional[TreeNode]) -> bool:
+    def subtree(self, root: Optional["TreeNode"], subRoot: Optional["TreeNode"]) -> bool:
         if not root and not subRoot:
             return True
         if (root and not subRoot) or (not root and subRoot):

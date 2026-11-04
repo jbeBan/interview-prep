@@ -5,12 +5,12 @@ from typing import Optional
 @dataclass
 class TreeNode:
     val: int = 0
-    left: TreeNode = None
-    right: TreeNode = None
+    left: "TreeNode" = None
+    right: "TreeNode" = None
 
 
 class Solution:
-    def kthSmallest(self, root: Optional[TreeNode], k: int) -> int:
+    def kthSmallest(self, root: Optional["TreeNode"], k: int) -> int:
         s = []
         c = root
         while c or s:

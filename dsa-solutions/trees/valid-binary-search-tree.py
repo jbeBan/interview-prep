@@ -5,13 +5,13 @@ from typing import Optional
 @dataclass
 class TreeNode:
     val: int = 0
-    left: TreeNode = None
-    right: TreeNode = None
+    left: "TreeNode" = None
+    right: "TreeNode" = None
 
 
 class Solution:
-    def isValidBST(self, root: Optional[TreeNode]) -> bool:
-        def valid(n: Optional[TreeNode], lm: int, rm: int) -> bool:
+    def isValidBST(self, root: Optional["TreeNode"]) -> bool:
+        def valid(n: Optional["TreeNode"], lm: int, rm: int) -> bool:
             if not n:
                 return True
             if not (lm < n.val < rm):

@@ -5,12 +5,12 @@ from typing import Optional
 @dataclass
 class TreeNode:
     val: int = 0
-    left: TreeNode = None
-    right: TreeNode = None
+    left: "TreeNode" = None
+    right: "TreeNode" = None
 
 
 class Solution:
-    def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
+    def isSameTree(self, p: Optional["TreeNode"], q: Optional["TreeNode"]) -> bool:
         if not p and not q:
             return True
         if self.nodes_differ(p, q):
@@ -19,7 +19,7 @@ class Solution:
             return False
         return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)
 
-    def nodes_differ(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
+    def nodes_differ(self, p: Optional["TreeNode"], q: Optional["TreeNode"]) -> bool:
         return (not p and q) or (p and not q)
 
 

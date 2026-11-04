@@ -6,12 +6,12 @@ from typing import Optional
 @dataclass
 class TreeNode:
     val: int = 0
-    left: TreeNode = None
-    right: TreeNode = None
+    left: "TreeNode" = None
+    right: "TreeNode" = None
 
 
 class Solution:
-    def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
+    def invertTree(self, root: Optional["TreeNode"]) -> Optional["TreeNode"]:
         queue = deque([root]) if root else deque()
         while queue:
             curr = queue.pop()

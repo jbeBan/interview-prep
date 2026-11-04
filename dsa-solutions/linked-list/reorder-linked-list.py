@@ -5,11 +5,11 @@ from typing import Optional
 @dataclass
 class ListNode:
     val: int = 0
-    next: ListNode = None
+    next: "ListNode" = None
 
 
 class Solution:
-    def reorderList(self, head: Optional[ListNode]) -> None:
+    def reorderList(self, head: Optional["ListNode"]) -> None:
         slow, fast = head, head.next
         while fast and fast.next:
             slow = slow.next

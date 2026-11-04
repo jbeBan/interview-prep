@@ -5,11 +5,11 @@ from typing import Optional
 @dataclass
 class ListNode:
     val: int
-    next: Optional[ListNode] = None
+    next: Optional["ListNode"] = None
 
 
 class Solution:
-    def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+    def reverseList(self, head: Optional["ListNode"]) -> Optional["ListNode"]:
         p = None
         c = head
         while c:

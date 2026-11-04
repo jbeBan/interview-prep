@@ -4,11 +4,11 @@ from typing import Optional
 
 class ListNode:
     val: int = 0
-    next: ListNode = None
+    next: "ListNode" = None
 
 
 class Solution:
-    def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
+    def removeNthFromEnd(self, head: Optional["ListNode"], n: int) -> Optional["ListNode"]:
         dummy = ListNode(-1, head)
         fast = head
         for _ in range(n):

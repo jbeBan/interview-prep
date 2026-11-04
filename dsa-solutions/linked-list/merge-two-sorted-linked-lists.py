@@ -5,13 +5,13 @@ from typing import Optional
 @dataclass
 class ListNode:
     val: int
-    next: Optional[ListNode] = None
+    next: Optional["ListNode"] = None
 
 
 class Solution:
     def mergeTwoLists(
-        self, list1: Optional[ListNode], list2: Optional[ListNode]
-    ) -> Optional[ListNode]:
+        self, list1: Optional["ListNode"], list2: Optional["ListNode"]
+    ) -> Optional["ListNode"]:
         head = ListNode()
         curr = head
         while list1 and list2:

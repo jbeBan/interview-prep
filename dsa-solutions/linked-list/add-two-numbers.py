@@ -4,13 +4,13 @@ from typing import Optional
 
 class ListNode:
     val: int = 0
-    next: ListNode = None
+    next: "ListNode" = None
 
 
 class Solution:
     def addTwoNumbers(
-        self, l1: Optional[ListNode], l2: Optional[ListNode]
-    ) -> Optional[ListNode]:
+        self, l1: Optional["ListNode"], l2: Optional["ListNode"]
+    ) -> Optional["ListNode"]:
         c = 0
         s = d = ListNode()
         while l1 or l2 or c:

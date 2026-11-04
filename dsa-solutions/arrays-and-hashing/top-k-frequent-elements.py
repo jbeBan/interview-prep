@@ -1,9 +1,8 @@
 from collections import defaultdict
-from typing import List
 
 
 class Solution:
-    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+    def topKFrequent(self, nums: list[int], k: int) -> list[int]:
         counts = defaultdict(int)
         for num in nums:
             counts[num] += 1

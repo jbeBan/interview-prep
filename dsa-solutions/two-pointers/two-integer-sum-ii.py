@@ -1,8 +1,5 @@
-from typing import List
-
-
 class Solution:
-    def twoSum(self, numbers: List[int], target: int) -> List[int]:
+    def twoSum(self, numbers: list[int], target: int) -> list[int]:
         l = 0
         r = len(numbers) - 1
         while l < r:

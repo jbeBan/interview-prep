@@ -1,9 +1,8 @@
 from operator import add, sub, mul, truediv
-from typing import List
 
 
 class Solution:
-    def evalRPN(self, tokens: List[str]) -> int:
+    def evalRPN(self, tokens: list[str]) -> int:
         operators = {"+": add, "-": sub, "*": mul, "/": truediv}
         stack = []
         for token in tokens:

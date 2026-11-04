@@ -1,8 +1,5 @@
-from typing import List
-
-
 class Solution:
-    def permute(self, nums: List[int]) -> List[List[int]]:
+    def permute(self, nums: list[int]) -> list[list[int]]:
         rp = [[]]
         for num in nums:
             np = []

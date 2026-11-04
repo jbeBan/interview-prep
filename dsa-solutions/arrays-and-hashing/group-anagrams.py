@@ -1,9 +1,8 @@
 from collections import defaultdict
-from typing import List
 
 
 class Solution:
-    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+    def groupAnagrams(self, strs: list[str]) -> list[list[str]]:
         anagrams = defaultdict(list)
         for string in strs:
             char_counts = [0] * 26

@@ -1,8 +1,5 @@
-from typing import List
-
-
 class Solution:
-    def longestConsecutive(self, nums: List[int]) -> int:
+    def longestConsecutive(self, nums: list[int]) -> int:
         longest = 0
         nums_set = set(nums)
         for num in nums:

@@ -1,5 +1,5 @@
 class Solution:
-    def coinChange(self, coins: List[int], amount: int) -> int:
+    def coinChange(self, coins: list[int], amount: int) -> int:
         d = [amount + 1] * (amount + 1)
         d[0] = 0
         for a in range(1, amount + 1):

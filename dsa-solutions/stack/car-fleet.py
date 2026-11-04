@@ -1,8 +1,5 @@
-from typing import List
-
-
 class Solution:
-    def carFleet(self, target: int, position: List[int], speed: List[int]) -> int:
+    def carFleet(self, target: int, position: list[int], speed: list[int]) -> int:
         stack = []
         m_ps = sorted(list(zip(position, speed)), reverse=True)
         for p, s in m_ps:

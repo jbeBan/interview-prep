@@ -1,4 +1,3 @@
-from ast import List
 from collections import deque
 from dataclasses import dataclass
 from typing import Optional
@@ -12,7 +11,7 @@ class TreeNode:
 
 
 class Solution:
-    def levelOrder(self, root: Optional["TreeNode"]) -> List[List[int]]:
+    def levelOrder(self, root: Optional["TreeNode"]) -> list[list[int]]:
         r = []
         q = deque([root]) if root else deque([])
         while q:

@@ -1,10 +1,9 @@
 import heapq
-from typing import List
 
 
 class KthLargest:
 
-    def __init__(self, k: int, nums: List[int]):
+    def __init__(self, k: int, nums: list[int]):
         self.size = k
         self.m_heap = nums.copy()
         heapq.heapify(self.m_heap)

@@ -1,8 +1,5 @@
-from typing import List
-
-
 class Solution:
-    def maxProfit(self, prices: List[int]) -> int:
+    def maxProfit(self, prices: list[int]) -> int:
         m_profit = 0
         l = 0
         for r in range(1, len(prices)):

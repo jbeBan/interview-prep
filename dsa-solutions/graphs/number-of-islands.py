@@ -1,9 +1,8 @@
 from collections import deque
-from typing import List
 
 
 class Solution:
-    def numIslands(self, grid: List[List[str]]) -> int:
+    def numIslands(self, grid: list[list[str]]) -> int:
         RL, CL = len(grid), len(grid[0])
         v = set()
 

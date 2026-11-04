@@ -1,12 +1,9 @@
-from typing import List
-
-
 class Solution:
-    def combinationSum2(self, candidates: List[int], target: int) -> List[List[int]]:
+    def combinationSum2(self, candidates: list[int], target: int) -> list[list[int]]:
         cs = []
         sn = sorted(candidates)
 
-        def comb_sum(i: int, s: int, c: List[int]):
+        def comb_sum(i: int, s: int, c: list[int]):
             if s == target:
                 cs.append(c.copy())
             if s >= target:

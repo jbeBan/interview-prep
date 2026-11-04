@@ -1,8 +1,5 @@
-from typing import List
-
-
 class Solution:
-    def hasDuplicate(self, nums: List[int]) -> bool:
+    def hasDuplicate(self, nums: list[int]) -> bool:
         unique_nums: set[int] = set()
         for num in nums:
             if num in unique_nums:

@@ -1,11 +1,10 @@
 import heapq
 
 from collections import Counter, deque
-from typing import List
 
 
 class Solution:
-    def leastInterval(self, tasks: List[str], n: int) -> int:
+    def leastInterval(self, tasks: list[str], n: int) -> int:
         c = Counter(tasks)
         h = list(c.values())
         heapq.heapify_max(h)

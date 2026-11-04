@@ -1,9 +1,8 @@
 from collections import deque
-from typing import List
 
 
 class Solution:
-    def maxAreaOfIsland(self, grid: List[List[int]]) -> int:
+    def maxAreaOfIsland(self, grid: list[list[int]]) -> int:
         RL, CL = len(grid), len(grid[0])
         v = set()
 

@@ -1,8 +1,5 @@
-from typing import List
-
-
 class Solution:
-    def encode(self, strs: List[str]) -> str:
+    def encode(self, strs: list[str]) -> str:
         e_chars = []
         for s in strs:
             e_chars.append(str(len(s)))
@@ -10,7 +7,7 @@ class Solution:
             e_chars.append(s)
         return "".join(e_chars)
 
-    def decode(self, s: str) -> List[str]:
+    def decode(self, s: str) -> list[str]:
         d_strs = []
         i = 0
         while i < len(s):

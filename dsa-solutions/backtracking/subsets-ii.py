@@ -1,8 +1,5 @@
-from typing import List
-
-
 class Solution:
-    def subsetsWithDup(self, nums: List[int]) -> List[List[int]]:
+    def subsetsWithDup(self, nums: list[int]) -> list[list[int]]:
         def helper(i, ints, c, s):
             if i >= len(ints):
                 s.append(c.copy())

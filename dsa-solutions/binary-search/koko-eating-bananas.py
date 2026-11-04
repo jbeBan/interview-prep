@@ -1,9 +1,8 @@
 import math
-from typing import List
 
 
 class Solution:
-    def minEatingSpeed(self, piles: List[int], h: int) -> int:
+    def minEatingSpeed(self, piles: list[int], h: int) -> int:
         l, u = 1, max(piles)
         k = u
         while l <= u:

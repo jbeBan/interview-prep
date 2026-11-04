@@ -1,8 +1,5 @@
-from typing import List
-
-
 class Solution:
-    def findDuplicate(self, nums: List[int]) -> int:
+    def findDuplicate(self, nums: list[int]) -> int:
         s1 = f = 0
         while True:
             s1 = nums[s1]

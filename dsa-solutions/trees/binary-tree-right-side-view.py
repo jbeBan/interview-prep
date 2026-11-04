@@ -11,7 +11,7 @@ class TreeNode:
 
 
 class Solution:
-    def rightSideView(self, root: Optional["TreeNode"]) -> List[int]:
+    def rightSideView(self, root: Optional["TreeNode"]) -> list[int]:
         rs = []
         q = deque([root]) if root else deque([])
         while q:
